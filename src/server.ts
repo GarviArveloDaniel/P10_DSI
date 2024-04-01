@@ -1,9 +1,15 @@
 import net from 'net';
 import {spawn} from 'child_process';
 
+/*
+Aqui también habría que suponer que el mensaje del servidor podría
+llegar troceado, por lo que habría que poner el allowHalfOpen a true
+para poder escribir después de un end.
+*/
+
 /**
  * The server recieves a bash command and executes it,
- * the ouptut of the commend is then sent to the client.
+ * the ouptut of the commend is then sent to the client
  * It also handles the errors of the command and an error in case
  * the command doesn't exist.
  */
