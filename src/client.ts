@@ -11,7 +11,6 @@ const commandParameters = commandOptions.slice(3);
 
 /**
  * Represents a message object.
- * @typedef {Object} Message
  * @property {string} command - The command name.
  * @property {any} options - The command parameters.
  */
